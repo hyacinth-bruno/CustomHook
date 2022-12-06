@@ -8,7 +8,6 @@
 ## Requirements
 
 1. Create 2 custom hooks to fetch list of data and details in `customHook` folder
-
 2. Apply the hook to get data then display data in `components` folder:
 3. Add loading logic to the custom hook above
 
