@@ -7,6 +7,7 @@
 
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useFetch from '../../customHook/useFetch';
 
 const Products = () => {
@@ -26,6 +27,7 @@ const Products = () => {
           <h3>Name: {product.title}</h3>
           <p>Status: {product.category}</p>
           <p>Region: {product.price}</p>
+          <Link to={`/products/${product.id}`}><button>More Details</button></Link>
         </div>
       ))}
     </div>

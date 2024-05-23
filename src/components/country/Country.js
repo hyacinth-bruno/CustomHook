@@ -6,6 +6,7 @@
 
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useFetch from '../../customHook/useFetch';
 
 const Country = () => {
@@ -25,6 +26,7 @@ const Country = () => {
           <h3>Name: {country.name.common}</h3>
           <p>Status: {country.status || 'Unknown'}</p>
           <p>Region: {country.region}</p>
+          <Link to={`/countries/${country.name.common}`}><button>More Details</button></Link>
         </div>
       ))}
     </div>
